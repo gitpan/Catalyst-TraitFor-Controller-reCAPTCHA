@@ -63,7 +63,7 @@ Catalyst::TraitFor::Controller::reCAPTCHA - authenticate people and read books!
 
 =head1 VERSION
 
-version 1.112810
+version 1.112812
 
 =head1 SYNOPSIS
 
@@ -98,6 +98,10 @@ a number of C<Private> methods that deal with the recaptcha.
 This module is based/copied from L<Catalyst::Controller::reCAPTCHA>,
 it just adds support for option passing and automatically sets ssl
 when used on a secure request.
+
+If you are using L<Catalyst::Controller::reCAPTCHA> and want to move
+to this role, you only need to stop extending L<Catalyst::Controller>
+and apply this role as shown in the SYNOPSIS.
 
 =head2 CONFIGURATION
 
@@ -141,11 +145,6 @@ or alternatively:
 If there's an error, $c->stash->{recaptcha_error} is
 set with the error string provided by L<Captcha::reCAPTCHA>.
 
-=head2 EXAMPLES
-
-See the t/lib/TestApp example in the
-L<Catalyst::Controller::reCAPTCHA> distribution.
-
 =head1 SEE ALSO
 
 =over 4
@@ -163,6 +162,10 @@ L<Catalyst::Controller>
 L<Catalyst>
 
 =back
+
+=head1 ACKNOWLEDGEMENTS
+
+This module is almost copied from Kieren Diment L<Catalyst::Controller::reCAPTCHA>.
 
 =head1 AUTHOR
 

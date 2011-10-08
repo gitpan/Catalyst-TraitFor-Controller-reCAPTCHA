@@ -26,4 +26,4 @@ requires:
   Moose::Role: 0
   MooseX::MethodAttributes::Role: 0
   namespace::autoclean: 0
-version: 1.112810
+version: 1.112812
