@@ -54,7 +54,7 @@
          "web" : "https://github.com/diegok/Catalyst-TraitFor-Controller-reCAPTCHA"
       }
    },
-   "version" : "1.112815",
+   "version" : "1.112816",
    "x_Dist_Zilla" : {
       "plugins" : [
          {
@@ -81,6 +81,26 @@
             "class" : "Dist::Zilla::Plugin::ConfirmRelease",
             "name" : "ConfirmRelease",
             "version" : "4.300002"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Git::Check",
+            "name" : "@Git/Check",
+            "version" : "1.112510"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Git::Commit",
+            "name" : "@Git/Commit",
+            "version" : "1.112510"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Git::Tag",
+            "name" : "@Git/Tag",
+            "version" : "1.112510"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Git::Push",
+            "name" : "@Git/Push",
+            "version" : "1.112510"
          },
          {
             "class" : "Dist::Zilla::Plugin::GatherDir",

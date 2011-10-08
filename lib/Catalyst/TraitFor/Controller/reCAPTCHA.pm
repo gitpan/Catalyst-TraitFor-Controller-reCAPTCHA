@@ -1,6 +1,6 @@
 package Catalyst::TraitFor::Controller::reCAPTCHA;
 {
-  $Catalyst::TraitFor::Controller::reCAPTCHA::VERSION = '1.112815';
+  $Catalyst::TraitFor::Controller::reCAPTCHA::VERSION = '1.112816';
 }
 # ABSTRACT: authenticate people and read books!
 
@@ -66,7 +66,7 @@ Catalyst::TraitFor::Controller::reCAPTCHA - authenticate people and read books!
 
 =head1 VERSION
 
-version 1.112815
+version 1.112816
 
 =head1 SYNOPSIS
 
@@ -120,15 +120,13 @@ In MyApp.pm (or equivalent in config file):
 reCAPTCHA server with failures, in which case the API keys get a temporary
 ban).
 
-=head2 METHOD
+=head2 METHODS
 
-captcha_get : Private
+=head3 captcha_get : Private
 
 Sets $c->stash->{recaptcha} to be the html form for the L<http://recaptcha.net/> reCAPTCHA service which can be included in your HTML form.
 
-=head2 METHOD
-
-captcha_check : Private
+=head3 captcha_check : Private
 
 Validates the reCaptcha using L<Captcha::reCAPTCHA>.  sets
 $c->stash->{recaptcha_ok} which will be 1 on success. The action also returns
