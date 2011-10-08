@@ -27,10 +27,10 @@ requires:
   MooseX::MethodAttributes::Role: 0
   namespace::autoclean: 0
 resources:
-  bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=${dist}
-  homepage: http://metacpan.org/release/${dist}
-  repository: git://github.com/diegok/${lowercase_dist}
-version: 1.112814
+  bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Catalyst-TraitFor-Controller-reCAPTCHA
+  homepage: http://metacpan.org/release/Catalyst-TraitFor-Controller-reCAPTCHA
+  repository: git://github.com/diegok/Catalyst-TraitFor-Controller-reCAPTCHA.git
+version: 1.112815
 x_Dist_Zilla:
   plugins:
     -
@@ -52,10 +52,6 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::ConfirmRelease
       name: ConfirmRelease
-      version: 4.300002
-    -
-      class: Dist::Zilla::Plugin::UploadToCPAN
-      name: UploadToCPAN
       version: 4.300002
     -
       class: Dist::Zilla::Plugin::GatherDir

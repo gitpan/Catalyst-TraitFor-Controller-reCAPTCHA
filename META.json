@@ -44,17 +44,17 @@
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "mailto" : "bug-${dist}@rt.cpan.org",
-         "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=${dist}"
+         "mailto" : "bug-Catalyst-TraitFor-Controller-reCAPTCHA@rt.cpan.org",
+         "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=Catalyst-TraitFor-Controller-reCAPTCHA"
       },
-      "homepage" : "http://metacpan.org/release/${dist}",
+      "homepage" : "http://metacpan.org/release/Catalyst-TraitFor-Controller-reCAPTCHA",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/diegok/${lowercase_dist}",
-         "web" : "http://github.com/diegok/${lowercase_dist}"
+         "url" : "git://github.com/diegok/Catalyst-TraitFor-Controller-reCAPTCHA.git",
+         "web" : "https://github.com/diegok/Catalyst-TraitFor-Controller-reCAPTCHA"
       }
    },
-   "version" : "1.112814",
+   "version" : "1.112815",
    "x_Dist_Zilla" : {
       "plugins" : [
          {
@@ -80,11 +80,6 @@
          {
             "class" : "Dist::Zilla::Plugin::ConfirmRelease",
             "name" : "ConfirmRelease",
-            "version" : "4.300002"
-         },
-         {
-            "class" : "Dist::Zilla::Plugin::UploadToCPAN",
-            "name" : "UploadToCPAN",
             "version" : "4.300002"
          },
          {
