@@ -1,4 +1,7 @@
 package Catalyst::TraitFor::Controller::reCAPTCHA;
+{
+  $Catalyst::TraitFor::Controller::reCAPTCHA::VERSION = '1.112814';
+}
 # ABSTRACT: authenticate people and read books!
 
 use Moose::Role;
@@ -63,7 +66,7 @@ Catalyst::TraitFor::Controller::reCAPTCHA - authenticate people and read books!
 
 =head1 VERSION
 
-version 1.112812
+version 1.112814
 
 =head1 SYNOPSIS
 

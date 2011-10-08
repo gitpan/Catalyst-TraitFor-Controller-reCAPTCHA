@@ -26,4 +26,143 @@ requires:
   Moose::Role: 0
   MooseX::MethodAttributes::Role: 0
   namespace::autoclean: 0
-version: 1.112812
+resources:
+  bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=${dist}
+  homepage: http://metacpan.org/release/${dist}
+  repository: git://github.com/diegok/${lowercase_dist}
+version: 1.112814
+x_Dist_Zilla:
+  plugins:
+    -
+      class: Dist::Zilla::Plugin::AutoVersion
+      name: AutoVersion
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::AutoPrereqs
+      name: AutoPrereqs
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::PodWeaver
+      name: PodWeaver
+      version: 3.101641
+    -
+      class: Dist::Zilla::Plugin::TestRelease
+      name: TestRelease
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::ConfirmRelease
+      name: ConfirmRelease
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::UploadToCPAN
+      name: UploadToCPAN
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::GatherDir
+      name: '@Filter/GatherDir'
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::PruneCruft
+      name: '@Filter/PruneCruft'
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::ManifestSkip
+      name: '@Filter/ManifestSkip'
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::MetaYAML
+      name: '@Filter/MetaYAML'
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::License
+      name: '@Filter/License'
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::Readme
+      name: '@Filter/Readme'
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::ExtraTests
+      name: '@Filter/ExtraTests'
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::ExecDir
+      name: '@Filter/ExecDir'
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::ShareDir
+      name: '@Filter/ShareDir'
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::MakeMaker
+      name: '@Filter/MakeMaker'
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::Manifest
+      name: '@Filter/Manifest'
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::TestRelease
+      name: '@Filter/TestRelease'
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::ConfirmRelease
+      name: '@Filter/ConfirmRelease'
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::UploadToCPAN
+      name: '@Filter/UploadToCPAN'
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::MetaConfig
+      name: MetaConfig
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::MetaJSON
+      name: MetaJSON
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::PkgVersion
+      name: PkgVersion
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::PodSyntaxTests
+      name: PodSyntaxTests
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::PodCoverageTests
+      name: PodCoverageTests
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::MetaResources
+      name: MetaResources
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::FinderCode
+      name: ':InstallModules'
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::FinderCode
+      name: ':IncModules'
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::FinderCode
+      name: ':TestFiles'
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::FinderCode
+      name: ':ExecFiles'
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::FinderCode
+      name: ':ShareFiles'
+      version: 4.300002
+    -
+      class: Dist::Zilla::Plugin::FinderCode
+      name: ':MainModule'
+      version: 4.300002
+  zilla:
+    class: Dist::Zilla::Dist::Builder
+    config:
+      is_trial: 0
+    version: 4.300002
