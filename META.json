@@ -36,6 +36,7 @@
             "FindBin" : 0,
             "Moose" : 0,
             "Test::More" : 0,
+            "Test::WWW::Mechanize::Catalyst" : 0,
             "strict" : 0,
             "warnings" : 0
          }
@@ -54,7 +55,7 @@
          "web" : "https://github.com/diegok/Catalyst-TraitFor-Controller-reCAPTCHA"
       }
    },
-   "version" : "1.112816",
+   "version" : "1.112960",
    "x_Dist_Zilla" : {
       "plugins" : [
          {
@@ -65,6 +66,17 @@
          {
             "class" : "Dist::Zilla::Plugin::AutoPrereqs",
             "name" : "AutoPrereqs",
+            "version" : "4.300002"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Prereqs",
+            "config" : {
+               "Dist::Zilla::Plugin::Prereqs" : {
+                  "phase" : "test",
+                  "type" : "requires"
+               }
+            },
+            "name" : "TestRequires",
             "version" : "4.300002"
          },
          {

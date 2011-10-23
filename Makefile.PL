@@ -18,6 +18,7 @@ my %WriteMakefileArgs = (
     "FindBin" => 0,
     "Moose" => 0,
     "Test::More" => 0,
+    "Test::WWW::Mechanize::Catalyst" => 0,
     "strict" => 0,
     "warnings" => 0
   },
@@ -35,7 +36,7 @@ my %WriteMakefileArgs = (
     "MooseX::MethodAttributes::Role" => 0,
     "namespace::autoclean" => 0
   },
-  "VERSION" => "1.112816",
+  "VERSION" => "1.112960",
   "test" => {
     "TESTS" => "t/*.t"
   }

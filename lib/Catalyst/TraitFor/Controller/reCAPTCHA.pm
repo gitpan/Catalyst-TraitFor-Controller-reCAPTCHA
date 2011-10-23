@@ -1,6 +1,6 @@
 package Catalyst::TraitFor::Controller::reCAPTCHA;
 {
-  $Catalyst::TraitFor::Controller::reCAPTCHA::VERSION = '1.112816';
+  $Catalyst::TraitFor::Controller::reCAPTCHA::VERSION = '1.112960';
 }
 # ABSTRACT: authenticate people and read books!
 
@@ -66,7 +66,7 @@ Catalyst::TraitFor::Controller::reCAPTCHA - authenticate people and read books!
 
 =head1 VERSION
 
-version 1.112816
+version 1.112960
 
 =head1 SYNOPSIS
 
