@@ -1,6 +1,6 @@
 package Catalyst::TraitFor::Controller::reCAPTCHA;
 {
-  $Catalyst::TraitFor::Controller::reCAPTCHA::VERSION = '1.113630';
+  $Catalyst::TraitFor::Controller::reCAPTCHA::VERSION = '1.122510';
 }
 # ABSTRACT: authenticate people and read books!
 
@@ -67,7 +67,7 @@ Catalyst::TraitFor::Controller::reCAPTCHA - authenticate people and read books!
 
 =head1 VERSION
 
-version 1.113630
+version 1.122510
 
 =head1 SYNOPSIS
 
@@ -96,7 +96,7 @@ In your controller
 
 =head1 SUMMARY
 
-Catalyst::Controller role around L<Capatcha::reCAPTCHA>.  Provides
+Catalyst::Controller role around L<Captcha::reCAPTCHA>.  Provides
 a number of C<Private> methods that deal with the recaptcha.
 
 This module is based/copied from L<Catalyst::Controller::reCAPTCHA>,
